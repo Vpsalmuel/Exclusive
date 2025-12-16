@@ -108,13 +108,13 @@
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-instagram2.png"
+                src="/src/assets/images/icon-instagram-dark.png"
                 alt="Instagram"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-twitter2.png"
+                src="/src/assets/images/icon-twitter-dark.png"
                 alt="Twitter"
                 class="w-5 h-5"
             /></span>
@@ -140,13 +140,13 @@
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-instagram2.png"
+                src="/src/assets/images/icon-instagram-dark.png"
                 alt="Instagram"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-twitter2.png"
+                src="/src/assets/images/icon-twitter-dark.png"
                 alt="Twitter"
                 class="w-5 h-5"
             /></span>
@@ -172,13 +172,13 @@
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-instagram2.png"
+                src="/src/assets/images/icon-instagram-dark.png"
                 alt="Instagram"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-twitter2.png"
+                src="/src/assets/images/icon-twitter-dark.png"
                 alt="Twitter"
                 class="w-5 h-5"
             /></span>
