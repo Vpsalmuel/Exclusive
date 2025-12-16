@@ -134,7 +134,7 @@
           <div class="flex gap-4 text-xl">
             <span
               ><img
-                src="/src/assets/images/icon-Linkedin2.png"
+                src="/src/assets/images/Linkedin.png"
                 alt="LinkedIn"
                 class="w-5 h-5"
             /></span>
@@ -166,7 +166,7 @@
           <div class="flex gap-4 text-xl">
             <span
               ><img
-                src="/src/assets/images/icon-Linkedin2.png"
+                src="/src/assets/images/Linkedin.png"
                 alt="LinkedIn"
                 class="w-5 h-5"
             /></span>
