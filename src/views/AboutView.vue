@@ -102,19 +102,19 @@
           <div class="flex gap-4 text-xl">
             <span
               ><img
-                src="/src/assets/images/Linkedin.png"
+                src="/src/assets/images/New-Icon-Linkedin.png"
                 alt="LinkedIn"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-instagram-dark.png"
+                src="/src/assets/images/New-Icon-Instagram.png"
                 alt="Instagram"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-twitter-dark.png"
+                src="/src/assets/images/New-Icon-Twitter.png"
                 alt="Twitter"
                 class="w-5 h-5"
             /></span>
@@ -134,19 +134,19 @@
           <div class="flex gap-4 text-xl">
             <span
               ><img
-                src="/src/assets/images/Linkedin.png"
+                src="/src/assets/images/New-Icon-Linkedin.png"
                 alt="LinkedIn"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-instagram-dark.png"
+                src="/src/assets/images/New-Icon-Instagram.png"
                 alt="Instagram"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-Twitter-dark.png"
+                src="/src/assets/images/New-Icon-Twitter.png"
                 alt="Twitter"
                 class="w-5 h-5"
             /></span>
@@ -166,19 +166,19 @@
           <div class="flex gap-4 text-xl">
             <span
               ><img
-                src="/src/assets/images/Linkedin.png"
+                src="/src/assets/images/New-Icon-Linkedin.png"
                 alt="LinkedIn"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-instagram-dark.png"
+                src="/src/assets/images/New-Icon-Instagram.png"
                 alt="Instagram"
                 class="w-5 h-5"
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-twitter-dark.png"
+                src="/src/assets/images/New-Icon-Twitter.png"
                 alt="Twitter"
                 class="w-5 h-5"
             /></span>

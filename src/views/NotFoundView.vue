@@ -20,7 +20,7 @@
       </p>
 
       <router-link
-        to="/"
+        to="/home"
         class="bg-[#DB4444] text-white py-4 px-12 rounded hover:bg-red-600 transition font-medium">
         Back to home page
       </router-link>

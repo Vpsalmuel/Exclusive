@@ -14,8 +14,8 @@ import HomeView from "@/views/HomeView.vue";
 const routes = [
   {
     path: "/",
-    name: "signup",
-    redirect: "/signup",
+    name: "login",
+    redirect: "/login",
   },
   {
     path: "/signup",
