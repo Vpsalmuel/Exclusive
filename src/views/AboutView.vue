@@ -33,14 +33,15 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-32">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-32 h-[230px]">
         <div
-          class="border border-gray-300 rounded p-8 flex flex-col items-center text-center group hover:bg-[#DB4444] hover:border-[#DB4444] hover:text-white transition cursor-pointer">
+          class="border border-gray-300 rounded-md p-8 flex flex-col items-center text-center group hover:bg-[#DB4444] hover:border-[#DB4444] hover:text-white transition cursor-pointer">
           <div
             class="bg-black/30 group-hover:bg-white/30 rounded-full p-3 mb-4">
             <div
               class="bg-black text-white group-hover:bg-white group-hover:text-black w-10 h-10 rounded-full flex items-center justify-center text-xl">
-              🏪
+              <img src="/src/assets/images/store.png" alt="" />
             </div>
           </div>
           <h3 class="text-3xl font-bold mb-1">10.5k</h3>
@@ -53,7 +54,7 @@
             class="bg-black/30 group-hover:bg-white/30 rounded-full p-3 mb-4">
             <div
               class="bg-black text-white group-hover:bg-white group-hover:text-black w-10 h-10 rounded-full flex items-center justify-center text-xl">
-              💲
+              <img src="/src/assets/images/money-back1.png" alt="" />
             </div>
           </div>
           <h3 class="text-3xl font-bold mb-1">33k</h3>
@@ -66,7 +67,7 @@
             class="bg-black/30 group-hover:bg-white/30 rounded-full p-3 mb-4">
             <div
               class="bg-black text-white group-hover:bg-white group-hover:text-black w-10 h-10 rounded-full flex items-center justify-center text-xl">
-              🛍️
+              <img src="/src/assets/images/giftbag.png" alt="" />
             </div>
           </div>
           <h3 class="text-3xl font-bold mb-1">45.5k</h3>
@@ -79,7 +80,7 @@
             class="bg-black/30 group-hover:bg-white/30 rounded-full p-3 mb-4">
             <div
               class="bg-black text-white group-hover:bg-white group-hover:text-black w-10 h-10 rounded-full flex items-center justify-center text-xl">
-              💰
+              <img src="/src/assets/images/coins.png" alt="" />
             </div>
           </div>
           <h3 class="text-3xl font-bold mb-1">25k</h3>
@@ -92,14 +93,31 @@
           <div
             class="bg-[#F5F5F5] h-[400px] flex items-end justify-center pt-8 mb-6 rounded">
             <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              class="h-[300px] object-cover"
+              src="/src/assets/images/man1.png"
+              class="h-[392px] object-cover"
               alt="Tom Cruise" />
           </div>
           <h3 class="text-3xl font-medium mb-1">Tom Cruise</h3>
           <p class="text-gray-500 mb-3">Founder & Chairman</p>
           <div class="flex gap-4 text-xl">
-            <span>🐦</span><span>📷</span><span>🔗</span>
+            <span
+              ><img
+                src="/src/assets/images/icon-Linkedin2.png"
+                alt="LinkedIn"
+                class="w-5 h-5"
+            /></span>
+            <span
+              ><img
+                src="/src/assets/images/icon-instagram2.png"
+                alt="Instagram"
+                class="w-5 h-5"
+            /></span>
+            <span
+              ><img
+                src="/src/assets/images/icon-twitter2.png"
+                alt="Twitter"
+                class="w-5 h-5"
+            /></span>
           </div>
         </div>
 
@@ -107,14 +125,31 @@
           <div
             class="bg-[#F5F5F5] h-[400px] flex items-end justify-center pt-8 mb-6 rounded">
             <img
-              src="https://randomuser.me/api/portraits/women/44.jpg"
-              class="h-[300px] object-cover"
+              src="/src/assets/images/woman2.png"
+              class="h-[392px] object-cover"
               alt="Emma Watson" />
           </div>
           <h3 class="text-3xl font-medium mb-1">Emma Watson</h3>
           <p class="text-gray-500 mb-3">Managing Director</p>
           <div class="flex gap-4 text-xl">
-            <span>🐦</span><span>📷</span><span>🔗</span>
+            <span
+              ><img
+                src="/src/assets/images/icon-Linkedin2.png"
+                alt="LinkedIn"
+                class="w-5 h-5"
+            /></span>
+            <span
+              ><img
+                src="/src/assets/images/icon-instagram2.png"
+                alt="Instagram"
+                class="w-5 h-5"
+            /></span>
+            <span
+              ><img
+                src="/src/assets/images/icon-twitter2.png"
+                alt="Twitter"
+                class="w-5 h-5"
+            /></span>
           </div>
         </div>
 
@@ -122,14 +157,31 @@
           <div
             class="bg-[#F5F5F5] h-[400px] flex items-end justify-center pt-8 mb-6 rounded">
             <img
-              src="https://randomuser.me/api/portraits/men/85.jpg"
-              class="h-[300px] object-cover"
+              src="/src/assets/images/man2.png"
+              class="h-[392px] object-cover"
               alt="Will Smith" />
           </div>
           <h3 class="text-3xl font-medium mb-1">Will Smith</h3>
           <p class="text-gray-500 mb-3">Product Designer</p>
           <div class="flex gap-4 text-xl">
-            <span>🐦</span><span>📷</span><span>🔗</span>
+            <span
+              ><img
+                src="/src/assets/images/icon-Linkedin2.png"
+                alt="LinkedIn"
+                class="w-5 h-5"
+            /></span>
+            <span
+              ><img
+                src="/src/assets/images/icon-instagram2.png"
+                alt="Instagram"
+                class="w-5 h-5"
+            /></span>
+            <span
+              ><img
+                src="/src/assets/images/icon-twitter2.png"
+                alt="Twitter"
+                class="w-5 h-5"
+            /></span>
           </div>
         </div>
       </div>

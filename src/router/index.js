@@ -14,48 +14,56 @@ import HomeView from "@/views/HomeView.vue";
 const routes = [
   {
     path: "/",
-    name: "signup",
-    redirect: "/signup",
+    name: "login",
+    redirect: "/login",
   },
   {
     path: "/signup",
     name: "signup",
     component: SignupView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/login",
     name: "login",
     component: LoginView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/home",
     name: "home",
     component: HomeView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/wishlist",
     name: "wishlist",
     component: WishListView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/cart",
     name: "cart",
     component: CartView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/checkout",
     name: "checkout",
     component: CheckOut,
+    meta: { requiresAuth: true },
   },
   {
     path: "/account",
     name: "account",
     component: AccountView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/product/:id",
     name: "product-details",
     component: ProductDetailsView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/about",
@@ -79,4 +87,18 @@ const router = createRouter({
   },
 });
 
+import store from "@/stores/counter";
+
 export default router;
+
+router.beforeEach((to, from, next) => {
+  const isAuthenticated = store.getters.isAuthenticated;
+
+  if (to.meta.requiresAuth && !isAuthenticated) {
+    next({ name: "login" });
+  } else if (to.meta.requiresGuest && isAuthenticated) {
+    next({ name: "home" });
+  } else {
+    next();
+  }
+});

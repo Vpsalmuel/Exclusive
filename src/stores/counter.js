@@ -7,7 +7,7 @@ export default createStore({
       products: [],
       cart: [],
       wishlist: [],
-      user: null,
+      user: JSON.parse(localStorage.getItem("user")) || null,
       loading: false,
     };
   },
@@ -108,15 +108,13 @@ export default createStore({
       if (!credentials.email || !credentials.password) {
         throw new Error("Invalid credentials");
       }
-      commit("SET_USER", {
-        name: "Md Rimel",
-        email: credentials.email,
-        token: "dummy-token-123",
-      });
+      commit("SET_USER", dummyUser);
+      localStorage.setItem("user", JSON.stringify(dummyUser));
     },
 
     logout({ commit }) {
       commit("SET_USER", null);
+      localStorage.removeItem("user");
     },
   },
 });

@@ -27,6 +27,7 @@
               >Home</router-link
             >
           </li>
+
           <li>
             <router-link
               to="/contact"
