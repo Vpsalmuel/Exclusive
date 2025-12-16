@@ -146,7 +146,7 @@
             /></span>
             <span
               ><img
-                src="/src/assets/images/icon-twitter-dark.png"
+                src="/src/assets/images/icon-Twitter-dark.png"
                 alt="Twitter"
                 class="w-5 h-5"
             /></span>
