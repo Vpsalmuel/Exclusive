@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="min-h-screen flex flex-col">
     <Header />
 
@@ -236,6 +236,143 @@ export default {
   components: {
     Header,
     Footer,
+  },
+};
+</script> -->
+
+<template>
+  <div class="min-h-screen flex flex-col">
+    <Header />
+
+    <div class="container mx-auto px-4 py-10 mb-20">
+      <div class="text-sm mb-10 text-gray-500">
+        <router-link to="/home" class="hover:text-black">Home</router-link>
+        <span class="mx-2">/</span>
+        <span class="text-black font-medium">About</span>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+        <div class="w-full md:w-1/2">
+          <h1 class="text-5xl font-bold mb-10 tracking-wide">Our Story</h1>
+          <p class="text-gray-700 leading-relaxed mb-6 max-w-[525px]">
+            Launched in 2015, Exclusive is South Asia’s premier online shopping
+            marketplace with an active presence in Bangladesh.
+          </p>
+          <p class="text-gray-700 leading-relaxed max-w-[525px]">
+            Exclusive has more than 1 Million products to offer, growing at a
+            very fast pace across diverse categories.
+          </p>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <img
+            :src="aboutImage"
+            alt="Shopping Women"
+            class="rounded w-full object-cover shadow-lg h-[609px]" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-32">
+        <div
+          class="border border-gray-300 rounded-md p-8 flex flex-col items-center text-center group hover:bg-[#DB4444] hover:border-[#DB4444] hover:text-white transition cursor-pointer">
+          <img :src="storeIcon" class="w-10 h-10 mb-4" />
+          <h3 class="text-3xl font-bold mb-1">10.5k</h3>
+          <p class="text-sm">Sellers active our site</p>
+        </div>
+
+        <div
+          class="border border-gray-300 rounded p-8 flex flex-col items-center text-center group hover:bg-[#DB4444] hover:border-[#DB4444] hover:text-white transition cursor-pointer">
+          <img :src="moneyBackIcon" class="w-10 h-10 mb-4" />
+          <h3 class="text-3xl font-bold mb-1">33k</h3>
+          <p class="text-sm">Monthly Product Sale</p>
+        </div>
+
+        <div
+          class="border border-gray-300 rounded p-8 flex flex-col items-center text-center group hover:bg-[#DB4444] hover:border-[#DB4444] hover:text-white transition cursor-pointer">
+          <img :src="giftBagIcon" class="w-10 h-10 mb-4" />
+          <h3 class="text-3xl font-bold mb-1">45.5k</h3>
+          <p class="text-sm">Customer active in our site</p>
+        </div>
+
+        <div
+          class="border border-gray-300 rounded p-8 flex flex-col items-center text-center group hover:bg-[#DB4444] hover:border-[#DB4444] hover:text-white transition cursor-pointer">
+          <img :src="coinsIcon" class="w-10 h-10 mb-4" />
+          <h3 class="text-3xl font-bold mb-1">25k</h3>
+          <p class="text-sm">Annual gross sale in our site</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32">
+        <div class="bg-white rounded overflow-hidden">
+          <img :src="man1" class="h-[392px] object-cover w-full" />
+          <h3 class="text-3xl font-medium mt-4">Tom Cruise</h3>
+          <p class="text-gray-500">Founder & Chairman</p>
+          <div class="flex gap-4 text-xl">
+            <img :src="twitterIcon" class="w-5 h-5" />
+            <img :src="instagramIcon" class="w-5 h-5" />
+            <img :src="linkedinIcon" class="w-5 h-5" />
+          </div>
+        </div>
+
+        <div class="bg-white rounded overflow-hidden">
+          <img :src="woman2" class="h-[392px] object-cover w-full" />
+          <h3 class="text-3xl font-medium mt-4">Emma Watson</h3>
+          <p class="text-gray-500">Managing Director</p>
+          <div class="flex gap-4 text-xl">
+            <img :src="twitterIcon" class="w-5 h-5" />
+            <img :src="instagramIcon" class="w-5 h-5" />
+            <img :src="linkedinIcon" class="w-5 h-5" />
+          </div>
+        </div>
+
+        <div class="bg-white rounded overflow-hidden">
+          <img :src="man2" class="h-[392px] object-cover w-full" />
+          <h3 class="text-3xl font-medium mt-4">Will Smith</h3>
+          <p class="text-gray-500">Product Designer</p>
+          <div class="flex gap-4 text-xl">
+            <img :src="twitterIcon" class="w-5 h-5" />
+            <img :src="instagramIcon" class="w-5 h-5" />
+            <img :src="linkedinIcon" class="w-5 h-5" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Footer />
+  </div>
+</template>
+
+<script>
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+
+/* Image imports (Vite-safe) */
+import twitterIcon from "@/assets/images/New-Icon-Twitter.png";
+import instagramIcon from "@/assets/images/New-Icon-Instagram.png";
+import linkedinIcon from "@/assets/images/New-Icon-Linkedin.png";
+import aboutImage from "@/assets/images/two-females.jpg";
+import storeIcon from "@/assets/images/store.png";
+import moneyBackIcon from "@/assets/images/money-back1.png";
+import giftBagIcon from "@/assets/images/giftbag.png";
+import coinsIcon from "@/assets/images/coins.png";
+import man1 from "@/assets/images/man1.png";
+import woman2 from "@/assets/images/woman2.png";
+import man2 from "@/assets/images/man2.png";
+
+export default {
+  name: "AboutView",
+  components: { Header, Footer },
+  data() {
+    return {
+      aboutImage,
+      storeIcon,
+      moneyBackIcon,
+      giftBagIcon,
+      coinsIcon,
+      man1,
+      woman2,
+      man2,
+    };
   },
 };
 </script>
