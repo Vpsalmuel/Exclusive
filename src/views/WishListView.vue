@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <NavBar />
+    <Header />
 
     <div class="container mx-auto px-4 py-10 mb-20">
       <div class="flex justify-between items-center mb-10">

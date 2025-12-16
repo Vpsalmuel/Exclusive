@@ -209,10 +209,10 @@
         <h2 class="text-3xl font-bold tracking-wide">Explore Our Products</h2>
         <div class="flex gap-2">
           <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200">
-            ←
+            <img src="/src/assets/images/icons_arrow-left.png" alt="" />
           </button>
           <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200">
-            →
+            <img src="/src/assets/images/icons_arrow-left.png" alt="" />
           </button>
         </div>
       </div>
@@ -379,7 +379,6 @@ export default {
   },
   mounted() {
     // Fetch products when page loads
-    console.log("dispatching products");
 
     this.$store.dispatch("fetchProducts");
   },

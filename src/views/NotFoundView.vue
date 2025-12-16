@@ -5,7 +5,7 @@
     <div
       class="container mx-auto px-4 py-10 mb-20 flex flex-col items-center justify-center text-center grow">
       <div class="w-full text-left text-sm mb-20 text-gray-500">
-        <router-link to="/" class="hover:text-black">Home</router-link>
+        <router-link to="/home" class="hover:text-black">Home</router-link>
         <span class="mx-2">/</span>
         <span class="text-black font-medium">404 Error</span>
       </div>

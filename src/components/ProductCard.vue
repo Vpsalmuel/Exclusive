@@ -204,6 +204,7 @@ export default {
   methods: {
     addToCart() {
       this.$store.commit("ADD_TO_CART", this.product);
+      alert(`${this.product.title} added to cart!`);
     },
     addToWishlist() {
       this.$store.commit("ADD_TO_WISHLIST", this.product);

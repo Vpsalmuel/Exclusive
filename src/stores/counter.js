@@ -108,8 +108,11 @@ export default createStore({
       if (!credentials.email || !credentials.password) {
         throw new Error("Invalid credentials");
       }
-      commit("SET_USER", dummyUser);
-      localStorage.setItem("user", JSON.stringify(dummyUser));
+      commit("SET_USER", { id: 1, name: "John Doe", email: credentials.email });
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ id: 1, name: "John Doe", email: credentials.email })
+      );
     },
 
     logout({ commit }) {

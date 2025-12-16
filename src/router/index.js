@@ -14,20 +14,20 @@ import HomeView from "@/views/HomeView.vue";
 const routes = [
   {
     path: "/",
-    name: "login",
-    redirect: "/login",
+    name: "signup",
+    redirect: "/signup",
   },
   {
     path: "/signup",
     name: "signup",
     component: SignupView,
-    meta: { requiresAuth: true },
+    meta: { requiresAuth: false },
   },
   {
     path: "/login",
     name: "login",
     component: LoginView,
-    meta: { requiresAuth: true },
+    meta: { requiresAuth: false },
   },
   {
     path: "/home",

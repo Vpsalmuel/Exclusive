@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <NavBar />
+    <Header />
 
     <div class="container mx-auto px-4 py-10 mb-20">
       <div class="text-sm mb-10 text-gray-500">
