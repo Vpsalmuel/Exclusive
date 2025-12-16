@@ -1,32 +1,34 @@
 import { createRouter, createWebHistory } from "vue-router";
-import ContactView from "@/views/ContactView.vue";
-import SignupView from "@/views/SignupView.vue";
+
 import LoginView from "@/views/LoginView.vue";
+import SignupView from "@/views/SignupView.vue";
+import HomeView from "@/views/HomeView.vue";
 import WishListView from "@/views/WishListView.vue";
 import CartView from "@/views/CartView.vue";
 import CheckOut from "@/views/CheckOut.vue";
 import AccountView from "@/views/AccountView.vue";
 import ProductDetailsView from "@/views/ProductDetailsView.vue";
 import AboutView from "@/views/AboutView.vue";
+import ContactView from "@/views/ContactView.vue";
 import NotFoundView from "@/views/NotFoundView.vue";
-import HomeView from "@/views/HomeView.vue";
+
+import store from "@/stores/counter";
 
 const routes = [
   {
     path: "/",
-    name: "login",
     redirect: "/login",
-  },
-  {
-    path: "/signup",
-    name: "signup",
-    component: SignupView,
-    meta: { requiresAuth: false },
   },
   {
     path: "/login",
     name: "login",
     component: LoginView,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: SignupView,
     meta: { requiresAuth: false },
   },
   {
@@ -75,30 +77,29 @@ const routes = [
     name: "contact",
     component: ContactView,
   },
-  // 404 CATCH-ALL ROUTE
-  { path: "/:pathMatch(.*)*", name: "not-found", component: NotFoundView },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "not-found",
+    component: NotFoundView,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes,
   scrollBehavior() {
-    return { x: 0, y: 0 };
+    return { top: 0 };
   },
 });
 
-import store from "@/stores/counter";
-
-export default router;
-
 router.beforeEach((to, from, next) => {
-  const isAuthenticated = store.getters.isAuthenticated;
+  const isAuthenticated = store.getters?.isAuthenticated;
 
   if (to.meta.requiresAuth && !isAuthenticated) {
     next({ name: "login" });
-  } else if (to.meta.requiresGuest && isAuthenticated) {
-    next({ name: "home" });
   } else {
     next();
   }
 });
+
+export default router;
